@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness and Meal Schedule Adjuster</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2>Enter Your Event</h2>
+    <form id="eventForm">
+        <label for="eventDay">Day of the Event:</label>
+        <select id="eventDay">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select>
+        <br><br>
+        <label for="eventTimeStart">Event Start Time:</label>
+        <input type="time" id="eventTimeStart">
+        <br><br>
+        <label for="eventTimeEnd">Event End Time:</label>
+        <input type="time" id="eventTimeEnd">
+        <br><br>
+        <button type="button" onclick="adjustSchedule()">Adjust Schedule</button>
+    </form>
+
+    <h2>Adjusted Schedule</h2>
+    <div id="adjustedSchedule"></div>
+
+    <h2>Meal Plan</h2>
+    <div id="mealPlan"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
